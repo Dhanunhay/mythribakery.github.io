@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mythri Food Bakers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      /* Colorful gradient background */
+      background: linear-gradient(135deg, #f6d365 0%, #fda085 50%, #fbc6a4 100%);
+      min-height: 100vh;
+    }
+    header {
+      background: #d35400;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #f39c12;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+    }
+    h2 {
+      margin-top: 2rem;
+    }
+    .category {
+      margin-bottom: 2rem;
+    }
+    .product-card {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 10px;
+      margin: 10px 0;
+      background: rgba(255, 255, 255, 0.9); /* white transparent bg */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    input[type="number"] {
+      width: 60px;
+      padding: 5px;
+      margin-left: 5px;
+      margin-right: 20px;
+    }
+    .whatsapp-button {
+      background-color: #25d366;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 1rem;
+      display: block;
+    }
+    footer {
+      background: #d35400;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    .variant-label {
+      font-size: 0.9em;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mythri Food Bakers</h1>
+  <p>Freshly Baked Happiness for Every Occasion</p>
+</header>
+
+<nav>
+  <a href="#products">Products</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="products">
+  <h2>Place Your Order</h2>
+
+  <!-- Puffs -->
+  <div class="category">
+    <h3>🥟 Puffs</h3>
+    <div class="product-card" data-name="Veg Puff">
+      Veg Puff: <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Egg Puff">
+      Egg Puff: <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Full Egg Puff">
+      Full Egg Puff: <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Paneer Puff">
+      Paneer Puff: <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Chicken Roll">
+      Chicken Roll: <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Chicken Puff">
+      Chicken Puff: <input type="number" min="0" value="0" />
+    </div>
+  </div>
+
+  <!-- Pastries -->
+  <div class="category">
+    <h3>🍰 Pastries</h3>
+    <div class="product-card" data-name="Pineapple Pastry">
+      Pineapple Pastry: <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Chocolate Pastry">
+      Chocolate Pastry: <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Black Forest Pastry">
+      Black Forest Pastry: <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Red Velvet Pastry">
+      Red Velvet Pastry: <input type="number" min="0" value="0" />
+    </div>
+  </div>
+
+  <!-- Cakes -->
+  <div class="category">
+    <h3>🎂 Cakes</h3>
+    <div class="product-card" data-name="Pineapple Cake">
+      Pineapple Cake:
+      <span class="variant-label">½ kg</span>
+      <input type="number" min="0" value="0" data-variant="(½ kg)" />
+      <span class="variant-label">1 kg</span>
+      <input type="number" min="0" value="0" data-variant="(1 kg)" />
+    </div>
+    <div class="product-card" data-name="Chocolate Cake">
+      Chocolate Cake:
+      <span class="variant-label">½ kg</span>
+      <input type="number" min="0" value="0" data-variant="(½ kg)" />
+      <span class="variant-label">1 kg</span>
+      <input type="number" min="0" value="0" data-variant="(1 kg)" />
+    </div>
+    <div class="product-card" data-name="Red Velvet Cake">
+      Red Velvet Cake:
+      <span class="variant-label">½ kg</span>
+      <input type="number" min="0" value="0" data-variant="(½ kg)" />
+      <span class="variant-label">1 kg</span>
+      <input type="number" min="0" value="0" data-variant="(1 kg)" />
+    </div>
+    <div class="product-card" data-name="Black Forest Cake">
+      Black Forest Cake:
+      <span class="variant-label">½ kg</span>
+      <input type="number" min="0" value="0" data-variant="(½ kg)" />
+      <span class="variant-label">1 kg</span>
+      <input type="number" min="0" value="0" data-variant="(1 kg)" />
+    </div>
+    <div class="product-card" data-name="Butterscotch Cake">
+      Butterscotch Cake:
+      <span class="variant-label">½ kg</span>
+      <input type="number" min="0" value="0" data-variant="(½ kg)" />
+      <span class="variant-label">1 kg</span>
+      <input type="number" min="0" value="0" data-variant="(1 kg)" />
+    </div>
+    <div class="product-card" data-name="Customised Cake">
+      Customised Cake (mention in WhatsApp):
+      <input type="number" min="0" value="0" />
+    </div>
+  </div>
+
+  <!-- Buns & Rolls -->
+  <div class="category">
+    <h3>🍞 Buns & Rolls</h3>
+    <div class="product-card" data-name="Cream Bun">
+      Cream Bun: <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Sweet Bun">
+      Sweet Bun: <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Chocolate Bun (Small)">
+      Chocolate Bun (Small): <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Chocolate Bun (Big)">
+      Chocolate Bun (Big): <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Cream Roll">
+      Cream Roll: <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Jam Roll">
+      Jam Roll: <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Sweet Puff">
+      Sweet Puff: <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Dil Pasand (Pieces)">
+      Dil Pasand (Pieces): <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Dil Pasand (Roll)">
+      Dil Pasand (Roll): <input type="number" min="0" value="0" />
+    </div>
+    <div class="product-card" data-name="Dil Kush">
+      Dil Kush: <input type="number" min="0" value="0" />
+    </div>
+  </div>
+
+  <button class="whatsapp-button" onclick="sendCombinedOrder()">Place Combined WhatsApp Order</button>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Name: Puligarla Sudhakar Reddy</p>
+  <p>📞 Phone: +91-9666611211</p>
+  <p>📧 Email: mythribakers@example.com</p>
+  <p>📍 Location:3 Temple,Boomi Reddy Colony,Quthbullapur,Hyderabad, Telangana, India, 500054</p>
+</section>
+
+<footer>
+  <p>© 2025 Mythri Food Bakers. All rights reserved.</p>
+</footer>
+
+<script>
+  function sendCombinedOrder() {
+    const products = document.querySelectorAll('.product-card');
+    let message = 'I want to place an order:\n';
+    let hasItems = false;
+
+    products.forEach(card => {
+      const name = card.getAttribute('data-name');
+      const inputs = card.querySelectorAll('input[type="number"]');
+      inputs.forEach(input => {
+        const qty = parseInt(input.value);
+        const variant = input.getAttribute('data-variant') || '';
+        if (qty > 0) {
+          hasItems = true;
+          message += `- ${qty} x ${name} ${variant}\n`;
+        }
+      });
+    });
+
+    if (!hasItems) {
+      alert('Please add at least one item to the cart before placing order.');
+      return;
+    }
+
+    const phoneNumber = '919666611211';
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  }
+</script>
+
+</body>
+</html>
